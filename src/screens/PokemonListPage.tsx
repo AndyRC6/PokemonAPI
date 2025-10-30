@@ -110,8 +110,12 @@ export const PokemonListPage = () => {
                 >
                   <td className={classes.cell}>{pokemon.id}</td>
                   <td className={classes.cell}>
-                    {pokemon.sprite && (
+                    {pokemon.sprite ? (
                       <img src={pokemon.sprite} alt={pokemon.name} className={classes.image} />
+                    ) : (
+                      <div className={classes.imagePlaceholder} title="Image not available">
+                        <span>Image not available for this Pokemon</span>
+                      </div>
                     )}
                   </td>
                   <td className={classes.cell}>{pokemon.name}</td>

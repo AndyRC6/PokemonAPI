@@ -24,12 +24,7 @@ export const PokemonDetailsModal = () => {
   }, [handleClose]);
 
   return (
-    <div
-      className={classes.modalOverlay}
-      onKeyDown={(e) => e.key === 'Enter' && handleClose()}
-      role="button"
-      tabIndex={0}
-    >
+    <div className={classes.modalOverlay} role="button" tabIndex={0}>
       <div className={classes.modalContainer} role="dialog" aria-modal="true">
         <div className={classes.modalHeader}>
           <h2 className={classes.modalTitle}>

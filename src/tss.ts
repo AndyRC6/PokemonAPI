@@ -133,6 +133,22 @@ export const usePokemonListStyles = tss.create(({ theme }) => ({
     height: '60px',
     objectFit: 'contain',
   },
+  imagePlaceholder: {
+    width: '60px',
+    height: '60px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#e0e0e0',
+    borderRadius: '4px',
+    padding: '4px',
+    '& span': {
+      fontSize: '10px',
+      color: '#666',
+      textAlign: 'center',
+      lineHeight: '1.2',
+    },
+  },
   paginationContainer: {
     position: 'fixed',
     bottom: 0,
