@@ -150,7 +150,6 @@ export const usePokemonListStyles = tss.create(({ theme }) => ({
     },
   },
   paginationContainer: {
-    position: 'fixed',
     bottom: 0,
     left: 0,
     right: 0,
@@ -159,7 +158,7 @@ export const usePokemonListStyles = tss.create(({ theme }) => ({
     alignItems: 'center',
     gap: '10px',
     padding: '15px 20px',
-    backgroundColor: 'white',
+    backgroundColor: theme.color.surface,
     borderTop: '2px solid #e0e0e0',
     boxShadow: '0 -2px 10px rgba(0, 0, 0, 0.1)',
     zIndex: 100,

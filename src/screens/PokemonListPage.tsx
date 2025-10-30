@@ -9,7 +9,7 @@ export const PokemonListPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 20;
+  const itemsPerPage = 10;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const { data, loading, error, totalCount } = useGetPokemons(
