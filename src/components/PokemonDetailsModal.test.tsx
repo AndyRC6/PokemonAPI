@@ -67,6 +67,9 @@ describe('PokemonDetailsModal', () => {
 
     renderWithRouter(<PokemonDetailsModal />);
 
+    screen.getAllByText('Pikachu').forEach((el: HTMLElement) => {
+      expect(el).toBeInTheDocument();
+    });
     expect(screen.getByText('#25')).toBeInTheDocument();
     expect(screen.getByText('electric')).toBeInTheDocument();
     expect(screen.getByText(/0.4 m/)).toBeInTheDocument();
